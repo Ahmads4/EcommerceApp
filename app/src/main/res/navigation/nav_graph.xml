@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.shoppingapp.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_electronicsFragment"
+            app:destination="@id/electronicsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_jewelryFragment"
+            app:destination="@id/jewelryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mensClothingFragment"
+            app:destination="@id/mensClothingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_womensClothingFragment"
+            app:destination="@id/womensClothingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/electronicsFragment"
+        android:name="com.example.shoppingapp.ui.products.ElectronicsFragment"
+        android:label="Electronics"
+        tools:layout="@layout/fragment_electronics">
+        <action
+            android:id="@+id/action_electronicsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jewelryFragment"
+        android:name="com.example.shoppingapp.ui.products.JewelryFragment"
+        android:label="Jewelry"
+        tools:layout="@layout/fragment_jewelry">
+        <action
+            android:id="@+id/action_jewelryFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mensClothingFragment"
+        android:name="com.example.shoppingapp.ui.products.MensClothingFragment"
+        android:label="Men's Clothing"
+        tools:layout="@layout/fragment_mens_clothing">
+        <action
+            android:id="@+id/action_mensClothingFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/womensClothingFragment"
+        android:name="com.example.shoppingapp.ui.products.WomensClothingFragment"
+        android:label="Women's Clothing"
+        tools:layout="@layout/fragment_womens_clothing">
+        <action
+            android:id="@+id/action_womensClothingFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.shoppingapp.ui.details.DetailsFragment"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="product"
+            app:argType="com.example.shoppingapp.data.remote.Products" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.shoppingapp.ui.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.shoppingapp.ui.checkout.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout" >
+
+        <action
+            android:id="@+id/action_checkoutFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutDialogFragment"
+        android:name="com.example.shoppingapp.ui.checkout.CheckoutDialogFragment"
+        android:label="fragment_checkout_dialog"
+        tools:layout="@layout/fragment_checkout_dialog" >
+        <action
+            android:id="@+id/action_checkoutDialogFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

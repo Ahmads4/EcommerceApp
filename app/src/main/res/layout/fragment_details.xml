@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MyShop"
+    tools:context=".ui.details.DetailsFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="100dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_title"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:lines="2"
+            android:text="Title "
+            app:autoSizeMaxTextSize="80sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/product_image"
+            tools:textSize="80sp" />
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="373dp"
+            android:layout_height="317dp"
+            android:layout_marginTop="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.657"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/product_title"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:text="Price"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_image" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:lines="7"
+            tools:text="HELLO THIS IS THE DESCRIPTION"
+            app:autoSizeMaxTextSize="90sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_price"
+            app:layout_constraintEnd_toStartOf="@id/spinner_quantity"/>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Add to Cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_description"
+            app:layout_constraintVertical_bias="0.603" />
+
+        <Spinner
+            android:id="@+id/spinner_quantity"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:entries="@array/quantity"
+            android:hint="Quantity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_description">
+
+        </Spinner>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
