@@ -3,12 +3,12 @@ An Android ecommerce app built with Kotlin using the latest Android development 
 ## Screenshots
 
   <p align="center">
-  <img src="app/src/main/res/drawable/home.jpg" alt= "Home" width = "130" /> &nbsp;
-  <img src="app/src/main/res/drawable/products.jpg" alt="Products" width="130" /> &nbsp;
-  <img src="app/src/main/res/drawable/details.jpg" alt="Details" width="130" /> &nbsp;
-  <img src="app/src/main/res/drawable/cart.jpg" alt="Cart" width="130" /> &nbsp;
-  <img src="app/src/main/res/drawable/checkout.jpg" alt="Checkout" width="130" />
-  <img src="app/src/main/res/drawable/success.jpg" alt="Success" width="130" />
+  <img src="app/src/main/res/drawable/home.jpg" alt= "Home" width = "150" /> &nbsp;
+  <img src="app/src/main/res/drawable/products.jpg" alt="Products" width="150" /> &nbsp;
+  <img src="app/src/main/res/drawable/details.jpg" alt="Details" width="150" /> &nbsp;
+  <img src="app/src/main/res/drawable/cart.jpg" alt="Cart" width="150" /> &nbsp;
+  <img src="app/src/main/res/drawable/checkout.jpg" alt="Checkout" width="150" />
+  <img src="app/src/main/res/drawable/success.jpg" alt="Success" width="150" />
 </p>
 
 ## About
@@ -24,8 +24,9 @@ Finally, the order will be confirmed!
 ## Architecture
 
 This application is done with the [model-view-viewmodel (MVVM) architecture](https://developer.android.com/jetpack/guide).
-
-<img src="app/src/main/res/drawable-180dpi/MVVM.png" alt="Details" width="700" />
+ <p align="center">
+<img src="app/src/main/res/drawable/mvvm.png" alt="MVVM" width="700" />
+</p>
 
 
 
