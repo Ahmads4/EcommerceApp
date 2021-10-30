@@ -51,4 +51,4 @@ This application is done with the [model-view-viewmodel (MVVM) architecture](htt
 
 This application uses the REST API provided by the [Fake Store API](https://fakestoreapi.com/).
 
-> **_Note:_** Since the API used in this application is a fake API, no changes can be made to the database. Hence, cart data had to be stored locally.
+> **_Note:_** Changes couldn't be made to the database, hence cart data had to be stored locally.
